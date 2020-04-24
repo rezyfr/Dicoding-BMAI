@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0208E0AE2452A04A00DA7F76 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208E0AD2452A04A00DA7F76 /* HeroDetail.swift */; };
+		0208E0B02452AA9F00DA7F76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0208E0AF2452AA9F00DA7F76 /* ProfileView.swift */; };
 		02B4FED3245286B6005EF2D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FED2245286B6005EF2D4 /* AppDelegate.swift */; };
 		02B4FED5245286B6005EF2D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FED4245286B6005EF2D4 /* SceneDelegate.swift */; };
 		02B4FED7245286B6005EF2D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FED6245286B6005EF2D4 /* ContentView.swift */; };
 		02B4FED9245286B9005EF2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B4FED8245286B9005EF2D4 /* Assets.xcassets */; };
 		02B4FEDC245286B9005EF2D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02B4FEDB245286B9005EF2D4 /* Preview Assets.xcassets */; };
 		02B4FEDF245286B9005EF2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02B4FEDD245286B9005EF2D4 /* LaunchScreen.storyboard */; };
+		02B4FEE82452873B005EF2D4 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FEE72452873B005EF2D4 /* Hero.swift */; };
+		02B4FEEA245289D9005EF2D4 /* DummyHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FEE9245289D9005EF2D4 /* DummyHeroes.swift */; };
+		02B4FEED24528C39005EF2D4 /* HeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FEEC24528C39005EF2D4 /* HeroCellView.swift */; };
+		02B4FEF024528E0B005EF2D4 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B4FEEF24528E0B005EF2D4 /* RoundedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0208E0AD2452A04A00DA7F76 /* HeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
+		0208E0AF2452AA9F00DA7F76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		02B4FECF245286B6005EF2D4 /* Submission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Submission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B4FED2245286B6005EF2D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02B4FED4245286B6005EF2D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		02B4FEDB245286B9005EF2D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02B4FEDE245286B9005EF2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02B4FEE0245286B9005EF2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02B4FEE72452873B005EF2D4 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		02B4FEE9245289D9005EF2D4 /* DummyHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyHeroes.swift; sourceTree = "<group>"; };
+		02B4FEEC24528C39005EF2D4 /* HeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellView.swift; sourceTree = "<group>"; };
+		02B4FEEF24528E0B005EF2D4 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,11 @@
 		02B4FED1245286B6005EF2D4 /* Submission */ = {
 			isa = PBXGroup;
 			children = (
+				02B4FEEE24528DF0005EF2D4 /* Utils */,
+				02B4FEEB24528BC1005EF2D4 /* View */,
+				02B4FEE624528725005EF2D4 /* Model */,
 				02B4FED2245286B6005EF2D4 /* AppDelegate.swift */,
 				02B4FED4245286B6005EF2D4 /* SceneDelegate.swift */,
-				02B4FED6245286B6005EF2D4 /* ContentView.swift */,
 				02B4FED8245286B9005EF2D4 /* Assets.xcassets */,
 				02B4FEDD245286B9005EF2D4 /* LaunchScreen.storyboard */,
 				02B4FEE0245286B9005EF2D4 /* Info.plist */,
@@ -73,6 +87,34 @@
 				02B4FEDB245286B9005EF2D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02B4FEE624528725005EF2D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02B4FEE72452873B005EF2D4 /* Hero.swift */,
+				02B4FEE9245289D9005EF2D4 /* DummyHeroes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02B4FEEB24528BC1005EF2D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02B4FEEC24528C39005EF2D4 /* HeroCellView.swift */,
+				02B4FED6245286B6005EF2D4 /* ContentView.swift */,
+				0208E0AD2452A04A00DA7F76 /* HeroDetail.swift */,
+				0208E0AF2452AA9F00DA7F76 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02B4FEEE24528DF0005EF2D4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				02B4FEEF24528E0B005EF2D4 /* RoundedImage.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				02B4FED3245286B6005EF2D4 /* AppDelegate.swift in Sources */,
+				0208E0B02452AA9F00DA7F76 /* ProfileView.swift in Sources */,
 				02B4FED5245286B6005EF2D4 /* SceneDelegate.swift in Sources */,
+				02B4FEF024528E0B005EF2D4 /* RoundedImage.swift in Sources */,
+				02B4FEED24528C39005EF2D4 /* HeroCellView.swift in Sources */,
+				0208E0AE2452A04A00DA7F76 /* HeroDetail.swift in Sources */,
+				02B4FEEA245289D9005EF2D4 /* DummyHeroes.swift in Sources */,
 				02B4FED7245286B6005EF2D4 /* ContentView.swift in Sources */,
+				02B4FEE82452873B005EF2D4 /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
