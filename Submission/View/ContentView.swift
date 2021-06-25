@@ -10,19 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     
-    //    let heroes = DummyHeroes.heroes()
-    
-    /// view body
+    @ObservedObject var list = Service.getNews()
     var body: some View {
         NavigationView {
-            List(heroes) {hero in
-                NavigationLink(destination: HeroDetail(hero: hero)){
-                    HeroCellView(hero: hero)
+            List(list.data) {news in
+                NavigationLink(destination:
+                NewsDetail(news: news)){
+                    NewsCellView(news: news)
                 }
             }
             .padding(.leading, -20)
             .padding(.trailing, -20)
-            .navigationBarTitle(Text("Pahlawan"))
+            .navigationBarTitle(Text("News"))
             .navigationBarItems(trailing:
                 NavigationLink(destination: ProfileView()){
                     Image("profile")

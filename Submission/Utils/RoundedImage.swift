@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct RoundedImage: View {
     let image: String
@@ -14,11 +15,20 @@ struct RoundedImage: View {
     
     var body: some View{
         VStack(alignment: .center, spacing: 15){
-            Image(image)
-                .resizable()
-                .scaledToFill()
-                .frame(width: size, height: size)
-                .cornerRadius(size/2)
+            if image.hasPrefix("http"){
+                WebImage(url: URL(string: image), options: .highPriority, context: nil)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: size, height: size)
+                    .cornerRadius(size/2)
+            } else {
+                Image(image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: size, height: size)
+                    .cornerRadius(size/2)
+            }
+            
         }
     }
 }
