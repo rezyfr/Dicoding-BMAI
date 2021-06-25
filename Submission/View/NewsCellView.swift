@@ -8,16 +8,20 @@
 
 import SwiftUI
 
-struct HeroCellView: View {
+struct NewsCellView: View {
     
-    let hero: Hero
+    let news: News
     
     var body: some View {
         HStack(spacing: 10) {
-            RoundedImage(image: hero.photo, size: 80)
+            if news.image != ""{
+                RoundedImage(image: news.image!, size: 80)
+            } else {
+                Text("Image\nunavailable")
+            }
             VStack(alignment: .leading, spacing: 3){
-                Text(hero.name).font(.headline)
-                Text(hero.desc).font(.subheadline).lineLimit(3)
+                Text(news.title).font(.headline)
+                Text(news.description).font(.subheadline).lineLimit(3)
             }
         }.padding(.leading, 15)
             .padding(.trailing, 15)
